@@ -136,7 +136,7 @@ var getDataFromMfr = function (mfrData) {
     }
 };
 
-// Options for requestDevicex
+// Options for requestDevice
 var options = {
     filters: [{manufacturerData: {0x1019: {}}}],
     acceptAllDevices: false
