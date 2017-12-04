@@ -158,7 +158,7 @@ if(navigator.bluetooth) {
                 // Getting data from manufacturerData map
                 var data = event.manufacturerData.get(0x1019);
                 // Converting byte array to hex string
-                var result = arrayBufferToHexString(data);
+                var result = arrayBufferToHexString(data.buffer);
                 // Parsing hex string into meaningful data (using sensor's instructions)
                 getDataFromMfr(result);
             });
